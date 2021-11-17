@@ -509,10 +509,7 @@ PORTFOLIO
     font-size: 3.5rem;
   }
 
-  .testimonial-box .description {
-    padding: 0 5rem;
-  }
-
+ 
   .post-box,
   .form-comments,
   .box-comments,
@@ -529,26 +526,9 @@ PORTFOLIO
   }
 }
 
-@media (min-width: 992px) {
-  .testimonial-box .description {
-    padding: 0 8rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .testimonial-box .description {
-    padding: 0 13rem;
-  }
-}
-
 @media (max-width: 1024px) {
   .bg-image {
     background-attachment: scroll;
   }
 }
 
-@media (max-width: 768px) {
-  .back-to-top {
-    bottom: 15px;
-  }
-}
