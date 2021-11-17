@@ -335,9 +335,6 @@ NAVBAR
   background-color: #0078ff;
 }
 
-/*
-INTRO
-*/
 
 .intro {
   height: 100vh;
@@ -386,26 +383,7 @@ INTRO
   font-size: 3rem;
 }
 
-.intro-single .breadcrumb {
-  background-color: transparent;
-  color: #0078ff;
-}
 
-.intro-single .breadcrumb .breadcrumb-item:before {
-  color: #cde1f8;
-}
-
-.intro-single .breadcrumb .breadcrumb-item.active {
-  color: #cde1f8;
-}
-
-.intro-single .breadcrumb a {
-  color: #fff;
-}
-
-/*
-PORTFOLIO
-*/
 
 .work-box {
   margin-bottom: 3rem;
@@ -460,27 +438,7 @@ PORTFOLIO
 }
 
 
-@media (min-width: 577px) {
-  .counter-box {
-    margin-bottom: 1.8rem;
-  }
-}
 
-@media (min-width: 767px) {
-  .about-mf .box-pl2 {
-    margin-top: 3rem;
-    padding-left: 0rem;
-  }
-
-  .card-blog {
-    margin-bottom: 3rem;
-  }
-
-  .contact-mf .box-pl2 {
-    margin-top: 3rem;
-    padding-left: 0rem;
-  }
-}
 
 @media (min-width: 768px) {
   .box-shadow-full {
@@ -507,10 +465,6 @@ PORTFOLIO
 
   .intro-single .intro-title {
     font-size: 3.5rem;
-  }
-
-  .testimonial-box .description {
-    padding: 0 5rem;
   }
 
   .post-box,
@@ -551,4 +505,40 @@ PORTFOLIO
   .back-to-top {
     bottom: 15px;
   }
+}
+.footer-basic {
+  padding:40px 0;
+  background-color:#ffffff;
+  color:#4b4c4d;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:19px;
+  color:#aaa;
+  margin-bottom:0;
 }
