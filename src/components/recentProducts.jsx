@@ -6,7 +6,7 @@ import stock1 from "../img/image1.png";
 import stock2 from "../img/image3.png";
 import stock3 from "../img/image4.png";
 import stock4 from "../img/image5.png";
-import stock5 from "../img/image5.png";
+import stock5 from "../img/image6.png";
 
 class RecentProducts extends React.Component {
   render() {
@@ -32,26 +32,13 @@ class RecentProducts extends React.Component {
                 <div className="work-content">
                   <div className="row">
                     <div className="col-sm-8">
-                      <h2 className="w-title">Artist Browser (Project)</h2>
+                      <h2 className="w-title">Ford Focus Car Mats</h2>
                       <div className="w-more">
                         <span className="w-ctegory">
-                          Bulma, HTML, CSS, JavaScript, Jquery, Favicon, Google
-                          fonts, 2 external API documentation
+                          2018 Luxery Ford  Mats for model Ford
                           <br></br>
                           <br></br>
-                          <a
-                            href=" https://dan297.github.io/Project1MusicAPI/index.html"
-                            alt="The URL of the deployed application"
-                          >
-                            Live URL
-                          </a>
-                          <br></br>
-                          <a
-                            href="https://github.com/dan297/Project1MusicAPI"
-                            alt="The URL of GITHUB"
-                          >
-                            Github URL
-                          </a>
+                          ⭐⭐⭐⭐
                         </span>
                       </div>
                     </div>
@@ -70,26 +57,13 @@ class RecentProducts extends React.Component {
                 <div className="work-content">
                   <div className="row">
                     <div className="col-sm-8">
-                      <h2 className="w-title">Car reviews (Project)</h2>
+                      <h2 className="w-title">Titanium Alloy Wheels</h2>
                       <div className="w-more">
                         <span className="w-ctegory">
-                          Node.js, JavaScript, MYSQL, Express.JS, Sequlize.js,
-                          HandleBars.js
+                        Titanium Alloy Wheels
                           <br></br>
-                          <br></br>
-                          <a
-                            href=" https://v8-car-reviews.herokuapp.com/"
-                            alt="The URL of the deployed application"
-                          >
-                            Live URL
-                          </a>
-                          <br></br>
-                          <a
-                            href="https://github.com/dan297/V8-car-reviews"
-                            alt="The URL of GITHUB"
-                          >
-                            Github URL
-                          </a>
+                          <br></br> 
+                          ⭐⭐⭐                     
                         </span>{" "}
                       </div>
                     </div>
@@ -108,25 +82,15 @@ class RecentProducts extends React.Component {
                 <div className="work-content">
                   <div className="row">
                     <div className="col-sm-8">
-                      <h2 className="w-title">Code Quiz</h2>
+                      <h2 className="w-title">Cherry Bomb exhaust</h2>
                       <div className="w-more">
                         <span className="w-ctegory">
-                          BootStrap, CSS, HTML, JavaScript, Google fonts
+                        Cherry Bomb exhaust
+                                                  <br></br>
+                                                       
                           <br></br>
-                          <br></br>
-                          <a
-                            href=" https://dan297.github.io/UNIT-4-Code-Quiz/index.html"
-                            alt="The URL of the deployed application"
-                          >
-                            Live URL
-                          </a>
-                          <br></br>
-                          <a
-                            href="https://github.com/dan297/UNIT-4-Code-Quiz"
-                            alt="The URL of GITHUB"
-                          >
-                            Github URL
-                          </a>
+                          ⭐⭐⭐⭐⭐
+                        
                         </span>
                       </div>
                     </div>
@@ -145,18 +109,14 @@ class RecentProducts extends React.Component {
                 <div className="work-content">
                   <div className="row">
                     <div className="col-sm-8">
-                      <h2 className="w-title">Team Profile Generator</h2>
+                      <h2 className="w-title">GT wing</h2>
                       <div className="w-more">
                         <span className="w-ctegory">
-                          Bootstrap, HTML, CSS, Sequlize,
+                        GT wing
+                                                  <br></br>
                           <br></br>
-                          <br></br>
-                          <a
-                            href="https://github.com/dan297/UNIT-10-TeamGenerator"
-                            alt="The URL of GITHUB"
-                          >
-                            Github URL
-                          </a>
+                          ⭐⭐⭐⭐
+                          
                         </span>
                       </div>
                     </div>
@@ -175,26 +135,13 @@ class RecentProducts extends React.Component {
                 <div className="work-content">
                   <div className="row">
                     <div className="col-sm-8">
-                      <h2 className="w-title">Note Taker</h2>
+                      <h2 className="w-title">Recaro Seats</h2>
                       <div className="w-more">
                         <span className="w-ctegory">
-                          Node.js, JavaScript, MYSQL, Express.JS, Sequlize.js,
-                          HandleBars.js
+                        Recaro Seats                          <br></br>
                           <br></br>
-                          <br></br>
-                          <a
-                            href=" https://morning-basin-49394.herokuapp.com"
-                            alt="The URL of the deployed application"
-                          >
-                            Live URL
-                          </a>
-                          <br></br>
-                          <a
-                            href="https://github.com/dan297/Unit-11-NoteTaker"
-                            alt="The URL of GITHUB"
-                          >
-                            Github URL
-                          </a>
+                          ⭐⭐
+                          
                         </span>
                       </div>
                     </div>
@@ -213,25 +160,13 @@ class RecentProducts extends React.Component {
                 <div className="work-content">
                   <div className="row">
                     <div className="col-sm-8">
-                      <h2 className="w-title">Employee Management System</h2>
+                      <h2 className="w-title">Sparco Mud Flaps</h2>
                       <div className="w-more">
                         <span className="w-ctegory">
-                          Node.js, Inquirer, MySQL.
+                        Sparco Mud Flaps
                           <br></br>
                           <br></br>
-                          <a
-                            href="https://drive.google.com/file/d/1Dk-FGlUBdDLLATp0JbA9lfQ0X4CWXSbP/view"
-                            alt="The URL of the deployed application"
-                          >
-                            Live URL
-                          </a>
-                          <br></br>
-                          <a
-                            href="https://github.com/dan297/EmployeeTracker_Unit_12"
-                            alt="The URL of GITHUB"
-                          >
-                            Github URL
-                          </a>{" "}
+                          ⭐⭐⭐⭐⭐
                         </span>
                       </div>
                     </div>
@@ -240,18 +175,25 @@ class RecentProducts extends React.Component {
                     </div>
                   </div>
                 </div>
-                <a
-                  href={stock}
-                  data-lightbox="gallery-mf"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
+
               </div>
             </div>
           </div>
         </div>
+        <div class="footer-basic">
+        <footer>     
+        <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">With ♡ from Dan, Abdi, Lee, Mahmoud</p>
+           </footer>
+           </div>
+
+
       </section>
+
     );
   }
 }

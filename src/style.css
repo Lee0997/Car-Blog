@@ -335,9 +335,6 @@ NAVBAR
   background-color: #0078ff;
 }
 
-/*
-INTRO
-*/
 
 .intro {
   height: 100vh;
@@ -386,26 +383,7 @@ INTRO
   font-size: 3rem;
 }
 
-.intro-single .breadcrumb {
-  background-color: transparent;
-  color: #0078ff;
-}
 
-.intro-single .breadcrumb .breadcrumb-item:before {
-  color: #cde1f8;
-}
-
-.intro-single .breadcrumb .breadcrumb-item.active {
-  color: #cde1f8;
-}
-
-.intro-single .breadcrumb a {
-  color: #fff;
-}
-
-/*
-PORTFOLIO
-*/
 
 .work-box {
   margin-bottom: 3rem;
@@ -460,27 +438,7 @@ PORTFOLIO
 }
 
 
-@media (min-width: 577px) {
-  .counter-box {
-    margin-bottom: 1.8rem;
-  }
-}
 
-@media (min-width: 767px) {
-  .about-mf .box-pl2 {
-    margin-top: 3rem;
-    padding-left: 0rem;
-  }
-
-  .card-blog {
-    margin-bottom: 3rem;
-  }
-
-  .contact-mf .box-pl2 {
-    margin-top: 3rem;
-    padding-left: 0rem;
-  }
-}
 
 @media (min-width: 768px) {
   .box-shadow-full {
@@ -509,7 +467,7 @@ PORTFOLIO
     font-size: 3.5rem;
   }
 
- 
+
   .post-box,
   .form-comments,
   .box-comments,
