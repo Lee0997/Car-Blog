@@ -14,11 +14,15 @@ import './style.css';
 
 import Navbar from './components/navbar.jsx';
 import Intro from './components/intro.jsx';
+import RecentProducts from './components/recentProducts';
+
 
 ReactDOM.render(
   <React.StrictMode>
       <Navbar />
       <Intro />
+      <RecentProducts />
+
   </React.StrictMode>,
 document.getElementById('root'));
 
