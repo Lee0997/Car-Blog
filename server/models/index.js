@@ -1,12 +1,11 @@
-const User = require('./user')
-const Review = require ('./reviews')
-const Products = require('./products')
+
+const { Schema, model } = require('mongoose');
+const bcrypt = require('bcrypt');
 
 
-User.hasMany(Review,{
-    foreignKey: 'reviewId',
-    onDelete: 'CASCADE',
-})
+class User extends Model {
+    validatePassword(password) {
+        return bycrpt.compareSync(password, this.password)
+    }
+}
 
-
-module.exports = {User, Review, Products}
