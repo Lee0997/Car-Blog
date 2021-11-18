@@ -4,6 +4,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 import 'bootstrap/dist/css/bootstrap.css';
+import 'semantic-ui-css/semantic.min.css'
 // import './img/icons/css/ionicons.css';
 // import './img/font-awesome/css/font-awesome.css';
 // import 'jquery/dist/jquery.min.js';
