@@ -36,6 +36,9 @@ class RecentProducts extends React.Component {
                       <div className="w-more">
                         <span className="w-ctegory">
                           2018 Luxery Ford  Mats for model Ford
+                          <br></br>
+                          <br></br>
+                          ⭐⭐⭐⭐
                         </span>
                       </div>
                     </div>
@@ -59,7 +62,8 @@ class RecentProducts extends React.Component {
                         <span className="w-ctegory">
                         Titanium Alloy Wheels
                           <br></br>
-                          <br></br>                       
+                          <br></br> 
+                          ⭐⭐⭐                     
                         </span>{" "}
                       </div>
                     </div>
@@ -83,7 +87,9 @@ class RecentProducts extends React.Component {
                         <span className="w-ctegory">
                         Cherry Bomb exhaust
                                                   <br></br>
+                                                       
                           <br></br>
+                          ⭐⭐⭐⭐⭐
                         
                         </span>
                       </div>
@@ -109,6 +115,7 @@ class RecentProducts extends React.Component {
                         GT wing
                                                   <br></br>
                           <br></br>
+                          ⭐⭐⭐⭐
                           
                         </span>
                       </div>
@@ -133,6 +140,7 @@ class RecentProducts extends React.Component {
                         <span className="w-ctegory">
                         Recaro Seats                          <br></br>
                           <br></br>
+                          ⭐⭐
                           
                         </span>
                       </div>
@@ -158,7 +166,7 @@ class RecentProducts extends React.Component {
                         Sparco Mud Flaps
                           <br></br>
                           <br></br>
-                          
+                          ⭐⭐⭐⭐⭐
                         </span>
                       </div>
                     </div>
@@ -179,7 +187,7 @@ class RecentProducts extends React.Component {
                 <li class="list-inline-item"><a href="#">Terms</a></li>
                 <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
             </ul>
-            <p class="copyright">With ♡ from the UK</p>
+            <p class="copyright">With ♡ from Dan, Abdi, Lee, Mahmoud</p>
            </footer>
            </div>
 
