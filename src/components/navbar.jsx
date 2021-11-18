@@ -1,5 +1,4 @@
 import React from "react";
-import $ from "jquery";
 
 import logo1 from "../img/male1.png";
 
@@ -7,19 +6,16 @@ class Navbar extends React.Component {
   constructor() {
     super();
     this.state = {
-      logo: logo1
+      logo: logo1,
     };
   }
 
   componentDidMount() {
-
-  
     window.addEventListener("scroll", () => {
       if (window.pageYOffset > 50) {
         document
           .querySelector(".navbar-expand-md")
           .classList.add("navbar-reduce");
-        
       } else {
         document
           .querySelector(".navbar-expand-md")
@@ -27,8 +23,8 @@ class Navbar extends React.Component {
         this.setState({ logo: logo1 });
       }
     });
-     }   
-    
+  }
+
   render() {
     return (
       <nav
@@ -65,14 +61,30 @@ class Navbar extends React.Component {
                 <a className="nav-link js-scroll active" href="#home">
                   Home
                 </a>
-              </li>
+              </li>{" "}
+
+              
+
+              <div class="ui compact menu">
+  <div class="ui simple dropdown item">
+    Products
+    <i class="dropdown icon"></i>
+    <div class="menu">
+      <div class="item">Engine</div>
+      <div class="item">Interior</div>
+      <div class="item">Body Kit</div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
               <li className="nav-item">
                 <a className="nav-link js-scroll" href="#about-me">
-                  Products
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll" href="#work">
                   Abous Us
                 </a>
               </li>
