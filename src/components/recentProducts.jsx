@@ -183,9 +183,9 @@ class RecentProducts extends React.Component {
         <div class="footer-basic">
         <footer>     
         <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">About</a></li>
-                <li class="list-inline-item"><a href="#">Terms</a></li>
-                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="#work">About</a></li>
+                <li class="list-inline-item"><a href="#work">Terms</a></li>
+                <li class="list-inline-item"><a href="#work">Privacy Policy</a></li>
             </ul>
             <p class="copyright">With ♡ from Dan, Abdi, Lee, Mahmoud</p>
            </footer>
