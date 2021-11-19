@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './index.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'semantic-ui-css/semantic.min.css';
+import './style.css';
+// import './img/icons/css/ionicons.css';
+// import './img/font-awesome/css/font-awesome.css';
+// import 'jquery/dist/jquery.min.js';
+
+import Navbar from './components/navbar.jsx';
+import Intro from './components/intro.jsx';
+import RecentProducts from './components/recentProducts';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Router>
+        <div className="flex-column justify-center align-center min-100-vh bg-primary">
+          <Switch>
+            <Route exact path="/">
+              <Intro />
+              <Navbar/>
+            </Route>
+            <Route exact path="/recentProducts">
+              <RecentProducts />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
   );
 }
 
