@@ -57,8 +57,15 @@ class Navbar extends React.Component {
     <i class="dropdown icon"></i>
     <div class="menu">
     <a href="engine">Engine </a>
-      <div class="item">Interior</div>
-      <div class="item">Body Kit</div>
+    <br></br>
+    <br></br>
+
+
+      <a href="Interior" >Interior</a>
+    <br></br>
+    <br></br>
+
+      <a href="Body Kit">Body Kit</a>
     </div>
   </div>
 </div>
