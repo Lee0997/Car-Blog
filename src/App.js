@@ -10,6 +10,10 @@ import Navbar from "./components/navbar.jsx";
 import Intro from "./components/intro.jsx";
 import RecentProducts from "./components/recentProducts";
 import AboutUS from "./components/aboutUs";
+import Engine from "./components/engine";
+import BodyKit from "./components/bodyKit";
+import Interior from "./components/interior";
+
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -51,14 +55,40 @@ function App() {
           element={
             <>
               <Navbar />
-<br></br>
-<br></br>
-<br></br>
-<br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
 
+              <Engine />
+            </>
+          }
+        ></Route>
+         <Route
+          path="/BodyKit"
+          element={
+            <>
+              <Navbar />
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
 
+              <BodyKit />
+            </>
+          }
+        ></Route>
+         <Route
+          path="/Interior"
+          element={
+            <>
+              <Navbar />
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
 
-              <RecentProducts />
+              <Interior />
             </>
           }
         ></Route>
