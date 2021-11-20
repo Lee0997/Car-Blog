@@ -32,45 +32,31 @@ class Navbar extends React.Component {
         id="mainNav"
       >
         <div className="container">
-          <a className="navbar-brand js-scroll" href="#page-top">
             <img
               src={this.state.logo}
               alt="logo"
               style={{ maxWidth: "100px" }}
             />
-          </a>
-          <button
-            className="navbar-toggler collapsed"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarDefault"
-            aria-controls="navbarDefault"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+         
           <div
             className="navbar-collapse collapse justify-content-end"
             id="navbarDefault"
           >
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link js-scroll active" href="#home">
+                <a className="nav-link js-scroll active" href="home">
                   Home
                 </a>
               </li>{" "}
 
               
 
-              <div class="ui compact menu">
+              <div class="nav-link js-scroll activ">
   <div class="ui simple dropdown item">
     Products
     <i class="dropdown icon"></i>
     <div class="menu">
-      <div class="item">Engine</div>
+    <a href="engine">Engine </a>
       <div class="item">Interior</div>
       <div class="item">Body Kit</div>
     </div>
@@ -84,7 +70,7 @@ class Navbar extends React.Component {
 
 
               <li className="nav-item">
-                <a className="nav-link js-scroll" href="#about-me">
+                <a className="nav-link js-scroll" href="aboutUs">
                   Abous Us
                 </a>
               </li>
