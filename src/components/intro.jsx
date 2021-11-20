@@ -2,6 +2,7 @@ import React from "react";
 import "./stars.scss";
 import Typed from "react-typed";
 
+
 class Intro extends React.Component {
   render() {
     return (
@@ -36,7 +37,7 @@ class Intro extends React.Component {
               <p className="pt-3">
                 <a
                   className="btn btn-primary btn js-scroll px-4"
-                  href="#work"
+                  href="cc"
                   role="button"
                 >
                   View Recent Products
