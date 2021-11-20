@@ -65,7 +65,7 @@ class Navbar extends React.Component {
     <br></br>
     <br></br>
 
-      <a href="Body Kit">Body Kit</a>
+      <a href="BodyKit">Body Kit</a>
     </div>
   </div>
 </div>
