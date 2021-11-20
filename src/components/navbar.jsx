@@ -1,5 +1,4 @@
 import React from "react";
-import $ from "jquery";
 
 import logo1 from "../img/male1.png";
 
@@ -7,19 +6,16 @@ class Navbar extends React.Component {
   constructor() {
     super();
     this.state = {
-      logo: logo1
+      logo: logo1,
     };
   }
 
   componentDidMount() {
-
-  
     window.addEventListener("scroll", () => {
       if (window.pageYOffset > 50) {
         document
           .querySelector(".navbar-expand-md")
           .classList.add("navbar-reduce");
-        
       } else {
         document
           .querySelector(".navbar-expand-md")
@@ -27,8 +23,8 @@ class Navbar extends React.Component {
         this.setState({ logo: logo1 });
       }
     });
-     }   
-    
+  }
+
   render() {
     return (
       <nav
@@ -36,43 +32,52 @@ class Navbar extends React.Component {
         id="mainNav"
       >
         <div className="container">
-          <a className="navbar-brand js-scroll" href="#page-top">
             <img
               src={this.state.logo}
               alt="logo"
               style={{ maxWidth: "100px" }}
             />
-          </a>
-          <button
-            className="navbar-toggler collapsed"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarDefault"
-            aria-controls="navbarDefault"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+         
           <div
             className="navbar-collapse collapse justify-content-end"
             id="navbarDefault"
           >
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link js-scroll active" href="#home">
+                <a className="nav-link js-scroll active" href="home">
                   Home
                 </a>
-              </li>
+              </li>{" "}
+
+              
+
+              <div class="nav-link js-scroll activ">
+  <div class="ui simple dropdown item">
+    Products
+    <i class="dropdown icon"></i>
+    <div class="menu">
+    <a href="engine">Engine </a>
+    <br></br>
+    <br></br>
+
+
+      <a href="Interior" >Interior</a>
+    <br></br>
+    <br></br>
+
+      <a href="BodyKit">Body Kit</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
               <li className="nav-item">
-                <a className="nav-link js-scroll" href="#about-me">
-                  Products
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll" href="#work">
+                <a className="nav-link js-scroll" href="aboutUs">
                   Abous Us
                 </a>
               </li>
