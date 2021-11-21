@@ -13,6 +13,7 @@ import AboutUS from "./components/aboutUs";
 import Engine from "./components/engine";
 import BodyKit from "./components/bodyKit";
 import Interior from "./components/interior";
+import LatestReviews1 from "./components/latestReviews1";
 
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -55,40 +56,41 @@ function App() {
           element={
             <>
               <Navbar />
-              <br></br>
-              <br></br>
-              <br></br>
-              <br></br>
+              
 
               <Engine />
             </>
           }
         ></Route>
-         <Route
+        <Route
           path="/BodyKit"
           element={
             <>
               <Navbar />
-              <br></br>
-              <br></br>
-              <br></br>
-              <br></br>
+              
 
               <BodyKit />
             </>
           }
         ></Route>
-         <Route
+        <Route
           path="/Interior"
           element={
             <>
               <Navbar />
-              <br></br>
-              <br></br>
-              <br></br>
-              <br></br>
+              
 
               <Interior />
+            </>
+          }
+        ></Route>
+         <Route
+          path="/recentProducts1"
+          element={
+            <>
+              <Navbar />
+              
+              <LatestReviews1 />
             </>
           }
         ></Route>

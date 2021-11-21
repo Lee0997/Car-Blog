@@ -2,7 +2,6 @@ import React from "react";
 import "./stars.scss";
 import Typed from "react-typed";
 
-
 class Intro extends React.Component {
   render() {
     return (
@@ -20,13 +19,7 @@ class Intro extends React.Component {
                 <span className="text-slider-items"></span>
                 <strong className="text-slider">
                   <Typed
-                    strings={[
-                      "Daniel White",
-                      "Lee Nock",
-                      "Abdi",
-                      "Mahmoud",
-                    
-                    ]}
+                    strings={["Daniel White", "Lee Nock", "Abdi", "Mahmoud"]}
                     typeSpeed={80}
                     backDelay={1100}
                     backSpeed={30}
@@ -37,7 +30,7 @@ class Intro extends React.Component {
               <p className="pt-3">
                 <a
                   className="btn btn-primary btn js-scroll px-4"
-                  href="cc"
+                  href="#recent"
                   role="button"
                 >
                   View Recent Products
