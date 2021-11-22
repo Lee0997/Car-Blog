@@ -6,13 +6,14 @@ body {
   color: #4e4e4e!important;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #1e1e1e;
+h2
+{
+  margin: 0 0 0.5rem;
+  line-height: 1.25;
+  color: #0078ff;
+  text-decoration: underline;
+padding-left: 20px; 
+
 }
 
 a {
@@ -194,9 +195,10 @@ a:hover {
 NAVBAR
 */
 
+
 .navbar-b {
   transition: all .5s ease-in-out;
-  background-color: transparent;
+  background-color: darkgray;
   padding-top: 1.563rem;
   padding-bottom: 1.563rem;
 }
@@ -214,7 +216,7 @@ NAVBAR
 
 .navbar-b.navbar-trans .nav-link,
 .navbar-b.navbar-reduce .nav-link {
-  color: #fff;
+  color: black;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -253,11 +255,12 @@ NAVBAR
 }
 
 .navbar-b.navbar-trans .nav-link:before {
-  background-color: red;
+  background-color: black;
 }
 
 .navbar-b.navbar-trans .nav-link:hover {
-  color: #fff;
+  color: blue;
+  text-decoration: underline;
 }
 
 .navbar-b.navbar-trans .show > .nav-link,
@@ -385,7 +388,25 @@ NAVBAR
   font-size: 3rem;
 }
 
+.latestReview{
+margin-top: 200px;
+}
 
+.product1image2{
+border-radius: 50px;
+float:right;
+margin: auto 90px;
+
+}
+.product1image1{
+  border-radius: 50px;
+  float:left;
+  
+  margin: auto 90px;
+  
+  
+  
+  }
 
 .work-box {
   margin-bottom: 3rem;
@@ -589,7 +610,6 @@ BUTTON
   user-select: none;
   font-size: 1rem;
   border-radius: .3rem;
-  border: 1px solid transparent;
   transition: all 500ms ease;
   cursor: pointer;
 }
@@ -626,11 +646,32 @@ BUTTON
   border-radius: .3rem;
 }
 
-.socials{
-  color: blue;
-  text-decoration: underline;
-  font-size: larger;
-  line-height: 40px;
+
+
+
+
+
+form label,
+form .form-label {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 0.625rem 0 0.25rem 0.3rem;
+margin: auto 10px;
 }
+
+form .form-input {
+  width: 100%;
+  padding: 0.75rem;
+  color: blue;
+  background-color: darkgrey;
+  margin: auto 30px;
+  margin: 0.625rem 0;
+  font-size: 1.2rem;
+  border: 1px solid #484848;
+  border-radius: 0.3rem;
+
+}
+
+
 
 
