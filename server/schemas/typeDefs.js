@@ -11,6 +11,10 @@ type User {
     savedReview: [Review]!
 }
 
+type Review {
+    
+}
+
 
 
 

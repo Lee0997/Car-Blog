@@ -14,15 +14,16 @@ module.exports = {
       if (req.headers.authorization) {
         token = token.split(' ').pop().trim();
       }
-  
+  //TODO: Add a redirect to homepage link here.
       if (!token) {
-        return res.status(404).json({ message: 'You have no token!' });
+        return res.status(404).json({ });
       }
   
       try {
         const { data } = jwt.verify(token, secret, { maxAge: expiration });
         req.user = data;
       } catch {
+        //TODO: Also add a redirect link here.
         console.log('Invalid token');
         return res.status(400).json({ message: 'invalid token!' });
       }
