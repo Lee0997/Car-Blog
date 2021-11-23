@@ -672,6 +672,14 @@ form .form-input {
 
 }
 
+.sliderimg{
+  width: 50%;
+  height: 500px;
+  float: right;
+  border-radius: 50px;
+  margin: auto 90px;
+  border-color: #1B1B1B;
+}
 
 
 
