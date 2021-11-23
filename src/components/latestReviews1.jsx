@@ -1,29 +1,54 @@
-import React from "react";
+import React, { useEffect } from "react";
 import product1 from "../img/image1.png";
 import product2 from "../img/image7.png";
-import "semantic-ui-css/semantic.min.css";
-import AliceCarousel from "react-alice-carousel";
-import "react-alice-carousel/lib/alice-carousel.css";
-import "../style.css";
+import avatar from "../img/male.png";
 
 function AboutMe() {
+  useEffect(() => {
+    window.$(".ui.rating").rating({ initialRating: 2 });
+  }, []);
+
   return (
     <div className="latestReview">
-      
-      <AliceCarousel autoPlay autoPlayInterval="100">
-        <img src={product1} className="sliderimg" alt="" />
-        <img src={product2} className="sliderimg" alt="" />
-      </AliceCarousel>
-  
-      <div class ="pageContent">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ipsam beatae ipsa. Illum ducimus autem, provident consequuntur eaque dolorem, corrupti harum eligendi at inventore ipsum fuga voluptatem architecto a quae!
+      <h1>Recaro Seats</h1>
 
-      <div class container="row mt-4">
+      <div className="pageContent">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
+        nemo. Fugiat, debitis a rem neque mollitia reprehenderit dolorem
+        eligendi perferendis, harum quis, aliquid inventore hic facere deleniti
+        qua Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo saepe,
+        eos repellendus nam quidem praesentium reprehenderit quaerat numquam
+        dignissimos natus impedit hic cumque, vel officia sunt, laudantium
+        tenetur quas nesciunt! Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Expedita sequi nesciunt vitae doloribus aut! Nobis
+        molestiae voluptate animi, saepe ex sunt id tempore quisquam expedita
+        voluptatum laboriosam. Odio, temporibus velit?
+      </div>
+      <br></br>
+      <br></br>
+
+      <div>
+        <img
+          src={product1}
+          alt="person icon"
+          className="product1image2"
+          width="540"
+          height="450"
+        />
+        <img
+          src={product2}
+          alt="person icon"
+          className="product1image1"
+          width="540"
+          height="450"
+        />
+      </div>
+      <div class="row mt-4">
         <div class="col-md-6">
           <br></br>
           <br></br>
-          <h2>Create a new post</h2>
 
+          <h2>Create a new post</h2>
           <br></br>
           <br></br>
 
@@ -47,18 +72,38 @@ function AboutMe() {
                 name="post-content"
               ></textarea>
             </div>
+            <br></br>
+            <br></br>
+            <div className="ui massive star rating"></div>
+
             <div class="form-group">
               <br></br>
               <br></br>
-              <button type="submit" class="btn btn-primary">
-                Post
-              </button>
+              <button class="ui primary button">Post</button>
+              <button class="ui button">Clear Fields</button>
             </div>
             <br></br>
             <br></br>
           </form>
+
+          <div class="side active">
+            <div class="ui card">
+              <div class="image">
+                <img src={avatar}></img>
+              </div>
+              <div class="content">
+                <a class="header">Stevie Feliciano</a>
+                <div class="meta">
+                  <span class="date">Joined in 2014</span>
+                </div>
+                <div class="description">Great Product</div>
+                <br></br>
+                ⭐⭐⭐⭐⭐
+              </div>
+              <a></a>
+            </div>
+          </div>
         </div>
-      </div>
       </div>
     </div>
   );
