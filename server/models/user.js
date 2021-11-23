@@ -8,27 +8,18 @@ class User extends Model {
     }
 }
 
-//const userSchema = new Schema(
-
-User.init({
-    id: {
-        type: DataTypes.UUIDV4,
-        allowNull: false,
-        primaryKey: true,
 
 
-    },
+const userSchema = new Schema(
+{
     username: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        validate: {
-            len: [8, 20],
-        },
+        type: String,
+        required: true,
         unique: true,
     },
     email: {
-        type: DataTypes.STRING,
-        allowNull: false,
+        type: String,
+        required: true,
         unique: true,
         validate: {
             isEmail: true,
@@ -37,13 +28,8 @@ User.init({
 
     },
     password: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        validate: {
-            min: 8,
-
-        }
-
+        type: String,
+        required: true
     }
 
 },
