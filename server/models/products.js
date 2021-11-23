@@ -1,45 +1,46 @@
-const { Schema, model} = require('mongoose');
+const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
 const { Products } = require('.');
 
 class Products extends Model {
 }
 
-Products.innit({
-    id: {
-        type: DataTypes.UUIDV4,
-        allowNull: false,
-        primaryKey: true,
+const productsSchema = new Schema(
 
-    },
+    {
 
-    name: {
-        type: DataTypes.STRING,
-        allowNull: false,
+        name: {
+            type: String,
+            required: true,
+            unique: true,
+            trim: true
+        },
 
-    },
+        type: {
+            type: String,
+            required: true,
+            unique: true,
+            trim: true
+        },
 
-    type: {
-        type: DataTypes.STRING,
-        allowNull: false,
-    },
+        make: {
+            type: String,
+            required: true,
+            unique: true,
+            trim: true
+        },
 
-    make: {
-        type: DataTypes.STRING,
-        allowNull: false,
-    },
+        range: {
+            type: Number,
+            required: true
+        },
 
-    range: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-    },
+        year: {
+            type: Number,
+            required: true
+        }
 
-    year: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-    }
-    
-})
-    
+    })
+
 
 module.exports = Products

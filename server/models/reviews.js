@@ -5,18 +5,24 @@ const { Review } = require('.');
 
 class Review extends model {
 }
-Review.init({
-    id: {
-        type: DataTypes.UUIDV4,
-        allowNull: false,
-        primaryKey: true,
 
-    },
-    userId: {
-        type: DataTypes.UUIDV4,
-        foreignKey: true,
+const reviewSchema = new Schema(
+    Review.init({
+
+        review: {
+            type: String,
+            required: true,
+        
+        },
+classes: [
+    {
+        type: Schema.Types.ObjectId,
+        ref: 'User'
     }
+]
 
 })
+)
+
 
 module.exports = Review
