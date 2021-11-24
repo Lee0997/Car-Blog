@@ -14,9 +14,11 @@ import Engine from "./components/engine";
 import BodyKit from "./components/bodyKit";
 import Interior from "./components/interior";
 import LatestReviews1 from "./components/latestReviews1";
-
+import LoginForm from "./components/loginForm";
+import RegistrationForm from "./components/regForm";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 
 function App() {
   return (
@@ -38,6 +40,24 @@ function App() {
             <>
               <Navbar />
               <AboutUS />
+            </>
+          }
+        ></Route>
+        <Route
+          path="/login"
+          element={
+            <>
+              <Navbar />
+              <LoginForm />
+            </>
+          }
+        ></Route>
+        <Route
+          path="/registration"
+          element={
+            <>
+              <Navbar />
+              <RegistrationForm />
             </>
           }
         ></Route>

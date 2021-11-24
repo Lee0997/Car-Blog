@@ -1,15 +1,17 @@
-import React from 'react';
+import React from 'react'
 import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react'
+// import logo1 from "../img/male1.png";
+// <Image src={{logo1}} />
 
-const RegistrationForm = () => (
+const LoginForm = () => (
   <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
     <Grid.Column style={{ maxWidth: 450 }}>
-      <Header as='h2' color='blue' textAlign='center'>
-        Registration
+      <Header as='h1' color='blue' textAlign='center'>
+        Log-in to your account
       </Header>
       <Form size='large'>
         <Segment stacked>
-          <label>Please enter an email address below:</label>
+          <label>Email Adress:</label>
           <Form.Input fluid icon='user' iconPosition='left' placeholder='E-mail address' />
           <label>Password:</label>
           <Form.Input
@@ -21,12 +23,15 @@ const RegistrationForm = () => (
           />
 
           <Button color='blue' fluid size='large'>
-            Sign Up
+            Login
           </Button>
         </Segment>
       </Form>
+      <Message>
+        New to us? <a style={{color: 'blue'}}href='registration'>Sign Up</a>
+      </Message>
     </Grid.Column>
   </Grid>
 )
 
-export default RegistrationForm
+export default LoginForm
