@@ -18,7 +18,10 @@ type Product {
     range: Int
     year: Int
 }
-
+type Auth {
+    token: ID!
+    user: User
+}
 type Review {
     _id: ID
     review: String
@@ -26,12 +29,17 @@ type Review {
 }
 
 type Query {
-
+    me: User
     
 }
 
+type Mutation {
+    createUser(username: String!, email: String!, password: String!): Auth
+    login(email: String!, password: String!): Auth
+    saveReview(authors: [String], reviewId: ID, title: String, reviewDescription: String): User
+    removeReview(reviewId: ID!): User
 
-
+}
 
 
 
