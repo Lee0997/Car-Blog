@@ -5,7 +5,7 @@ import "./navbar";
 class Contact extends React.Component {
   render() {
     return (
-      <section
+      <div
         className="paralax-mf footer-paralax bg-image sect-mt4 route"
         style={{ backgroundImage: "url(" + imageOverlay + ")" }}
       >
@@ -162,14 +162,8 @@ class Contact extends React.Component {
           </div>
         </div>
         <footer>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="#work">About</a></li>
-                <li class="list-inline-item"><a href="#work">Terms</a></li>
-                <li class="list-inline-item"><a href="#work">Privacy Policy</a></li>
-            </ul>
-            <p class="copyright">With ♡ from Dan, Abdi, Lee, Mahmoud</p></footer>
-      </section>
-      
+        </footer>
+      </div>
     );
   }
 }

@@ -6,6 +6,19 @@ body {
   color: #4e4e4e!important;
 }
 
+h1{
+  align-items: center;
+text-decoration:underline ;
+font-weight: bolder;
+margin: 19px auto;
+text-align: center;
+
+
+
+
+}
+
+
 h2
 {
   margin: 0 0 0.5rem;
@@ -672,14 +685,16 @@ form .form-input {
 
 }
 
-.sliderimg{
-  width: 50%;
-  height: 500px;
-  float: right;
-  border-radius: 50px;
-  margin: auto 90px;
-  border-color: #1B1B1B;
+
+.pageContent{
+  color: red;
+  display: flex;
+  text-align: center;
+  font-size: larger;
+  line-height: 30px;
+
 }
+
 
 
 
