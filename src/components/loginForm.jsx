@@ -4,6 +4,10 @@ import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui
 // <Image src={{logo1}} />
 
 const LoginForm = () => (
+  <div id="home" className="intro route bg-image background">
+        <div id="stars" />
+        <div id="stars2" />
+        <div id="stars3" />
   <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
     <Grid.Column style={{ maxWidth: 450 }}>
       <Header as='h1' color='blue' textAlign='center'>
@@ -32,6 +36,7 @@ const LoginForm = () => (
       </Message>
     </Grid.Column>
   </Grid>
+  </div>
 )
 
 export default LoginForm
