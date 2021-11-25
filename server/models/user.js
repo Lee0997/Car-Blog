@@ -2,50 +2,41 @@ const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
 
 
-class User extends Model {
-    validatePassword(password) {
-        return bycrpt.compareSync(password, this.password)
-    }
-}
-
-
-
 const userSchema = new Schema(
-{
+  {
     username: {
-        type: String,
-        required: true,
-        unique: true,
+      type: String,
+      required: true,
+      unique: true,
     },
     email: {
-        type: String,
-        required: true,
-        unique: true,
-        validate: {
-            isEmail: true,
-
-        }
-
+      type: String,
+      required: true,
+      unique: true,
+      match: [/.+@.+\..+/, 'Must use a valid email address'],
     },
     password: {
-        type: String,
-        required: true
+      type: String,
+      required: true,
     }
+  }
+);
 
-},
-    {
-        hooks: {
-            beforeCreate: aysnc(newUserData => {
-                newUserData.password = await bycrpt.hash(newUserData.password, 10)
-                return newUserData
-            }),
-            beforeUpdate: aysnc(updatedUserData => {
-                updatedUserData.password = await bycrpt.hash(updatedUserData.password, 10)
-                return updatedUserData
-            }),
+// hash user password
+userSchema.pre('save', async function (next) {
+  if (this.isNew || this.isModified('password')) {
+    const saltRounds = 10;
+    this.password = await bcrypt.hash(this.password, saltRounds);
+  }
 
-        },
-        sequelize, modelName: 'User'
+  next();
+});
 
-    })
-module.exports = User
+// custom method to compare and validate password for logging in
+userSchema.methods.isCorrectPassword = async function (password) {
+  return bcrypt.compare(password, this.password);
+};
+
+const User = model('User', userSchema);
+
+module.exports = User;

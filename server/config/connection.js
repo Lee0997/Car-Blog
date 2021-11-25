@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect(
+const connection = mongoose.connect(
   process.env.MONGODB_URI || 'mongodb://localhost/',
   {
     useNewUrlParser: true,
@@ -10,4 +10,4 @@ mongoose.connect(
   }
 );
 
-module.exports = mongoose.connection;
+module.exports = connection;
