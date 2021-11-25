@@ -1,13 +1,27 @@
-import React, { useEffect } from "react";
+import React, { useEffect,  useState } from "react";
 import product1 from "../img/image1.png";
 import product2 from "../img/image7.png";
-import avatar from "../img/male.png";
+import avatar from "../img/logo.png";
 
-function AboutMe() {
+function AboutMe(props) {
   useEffect(() => {
     window.$(".ui.rating").rating({ initialRating: 2 });
   }, []);
 
+  const [input, setInput] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    props.onSubmit({
+      text: input,
+    });
+
+    setInput("");
+  };
+
+
+ 
   return (
     <div className="latestReview">
       <h1>Recaro Seats</h1>
@@ -58,6 +72,7 @@ function AboutMe() {
               <input
                 class="form-input"
                 type="text"
+                input={input}
                 id="post-title"
                 name="post-title"
               />
@@ -79,8 +94,9 @@ function AboutMe() {
             <div class="form-group">
               <br></br>
               <br></br>
-              <button class="ui primary button">Post</button>
+              <button class="ui primary button" onSubmit={handleSubmit}>Post </button>
               <button class="ui button">Clear Fields</button>
+
             </div>
             <br></br>
             <br></br>
@@ -92,7 +108,7 @@ function AboutMe() {
                 <img src={avatar}></img>
               </div>
               <div class="content">
-                <a class="header">Stevie Feliciano</a>
+                <a class="header">{input}</a>
                 <div class="meta">
                   <span class="date">Joined in 2014</span>
                 </div>
@@ -105,8 +121,14 @@ function AboutMe() {
           </div>
         </div>
       </div>
+      <div>
+      
     </div>
+    </div>
+
+    
   );
 }
+
 
 export default AboutMe;

@@ -1,46 +1,36 @@
-const { Schema, model } = require('mongoose');
-const bcrypt = require('bcrypt');
-const { Products } = require('.');
+const { Schema } = require("mongoose");
 
-class Products extends Model {
-}
+const productsSchema = new Schema({
+  name: {
+    type: String,
+    required: true,
+    unique: true,
+    trim: true,
+  },
 
-const productsSchema = new Schema(
+  type: {
+    type: String,
+    required: true,
+    unique: true,
+    trim: true,
+  },
 
-    {
+  make: {
+    type: String,
+    required: true,
+    unique: true,
+    trim: true,
+  },
 
-        name: {
-            type: String,
-            required: true,
-            unique: true,
-            trim: true
-        },
+  range: {
+    type: Number,
+    required: true,
+  },
 
-        type: {
-            type: String,
-            required: true,
-            unique: true,
-            trim: true
-        },
+  year: {
+    type: Number,
+    required: true,
+  },
+});
 
-        make: {
-            type: String,
-            required: true,
-            unique: true,
-            trim: true
-        },
-
-        range: {
-            type: Number,
-            required: true
-        },
-
-        year: {
-            type: Number,
-            required: true
-        }
-
-    })
-
-
-module.exports = Products
+module.exports = productsSchema;
