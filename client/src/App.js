@@ -19,6 +19,7 @@ import RegistrationForm from "./components/regForm";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
+import * as serviceWorker from "./serviceWorker";
 
 function App() {
   return (
@@ -76,7 +77,6 @@ function App() {
           element={
             <>
               <Navbar />
-              
 
               <Engine />
             </>
@@ -87,7 +87,6 @@ function App() {
           element={
             <>
               <Navbar />
-              
 
               <BodyKit />
             </>
@@ -98,18 +97,17 @@ function App() {
           element={
             <>
               <Navbar />
-              
 
               <Interior />
             </>
           }
         ></Route>
-         <Route
+        <Route
           path="/recentProducts1"
           element={
             <>
               <Navbar />
-              
+
               <LatestReviews1 />
             </>
           }
@@ -118,5 +116,7 @@ function App() {
     </Router>
   );
 }
+
+serviceWorker.unregister();
 
 export default App;
