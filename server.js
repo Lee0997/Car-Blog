@@ -12,7 +12,7 @@ require("dotenv").config();
 
 async function startApolloServer(typeDefs, resolvers) {
     const app = express();
-    const PORT = process.env.PORT || 3001;
+    const PORT = process.env.PORT || 3000;
 
     const server = new ApolloServer({
         typeDefs,
@@ -26,7 +26,7 @@ async function startApolloServer(typeDefs, resolvers) {
     app.use(express.json());
 
     const app = express();
-    const PORT = process.env.PORT || 3001;
+    const PORT = process.env.PORT || 3000;
 
     app.use(express.urlencoded({ extended: true }));
     app.use(express.json());
