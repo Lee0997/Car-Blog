@@ -1,6 +1,6 @@
-import React, { useEffect,  useState } from "react";
-import product1 from "../img/image1.png";
-import product2 from "../img/image7.png";
+import React, { useEffect, useState } from "react";
+import product1 from "../img/image2.png";
+import product2 from "../img/mats.png";
 import avatar from "../img/logo.png";
 
 function AboutMe(props) {
@@ -20,11 +20,9 @@ function AboutMe(props) {
     setInput("");
   };
 
-
- 
   return (
     <div className="latestReview">
-      <h1>Recaro Seats</h1>
+      <h1>Ford Focus Car Mats</h1>
 
       <div className="pageContent">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
@@ -94,9 +92,10 @@ function AboutMe(props) {
             <div class="form-group">
               <br></br>
               <br></br>
-              <button class="ui primary button" onSubmit={handleSubmit}>Post </button>
+              <button class="ui primary button" onSubmit={handleSubmit}>
+                Post{" "}
+              </button>
               <button class="ui button">Clear Fields</button>
-
             </div>
             <br></br>
             <br></br>
@@ -121,14 +120,9 @@ function AboutMe(props) {
           </div>
         </div>
       </div>
-      <div>
-      
+      <div></div>
     </div>
-    </div>
-
-    
   );
 }
-
 
 export default AboutMe;
