@@ -26,6 +26,13 @@ const typeDefs = gql`
     classes: [User]
   }
 
+  input ReviewInput {
+    authors: [String]
+      reviewId: ID
+      title: String
+      reviewDescription: String
+  }
+
   type Query {
     me: User
   }
@@ -33,12 +40,7 @@ const typeDefs = gql`
   type Mutation {
     createUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
-    saveReview(
-      authors: [String]
-      reviewId: ID
-      title: String
-      reviewDescription: String
-    ): User
+    saveReview( reviewData: ReviewInput!): User
     removeReview(reviewId: ID!): User
   }
 `;
