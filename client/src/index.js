@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -7,8 +6,8 @@ import {
   ApolloClient,
   InMemoryCache,
   ApolloProvider,
-} from "@apollo/client";
-
+  createHttpLink,
+} from '@apollo/client';
   const httpLink = createHttpLink({
     uri: '/graphql',
   });
