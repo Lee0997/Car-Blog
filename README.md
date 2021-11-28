@@ -1,25 +1,40 @@
-## Our Blog about Cars
+ # Project 3 - Car Blog
 
-# Description
+  Table of Contents:
+  1. [Description](#Description)
+  2. [Installation](#Installation)
+  3. [Usage](#Usage)
+  4. [License](#License)
+  5. [Contributing](#Contributing)
+  6. [Tests](#Tests)
+  7. [Further Questions](#Questions)
 
-Our Blog will be a descriptive, easy-to-use and highly functional application which will allow our users to delve into the world of cars (particularly car parts). We decided to build this as a passion project and a learning tool to develop our skills with React.js. This application will enable the user to look into our parts, be provided with a description and an image of the product. To us, this appeared to be quite an under-represented field on the internet in terms of blogs and we wanted to rectify that for all the car fans out there. 
+  ## Description 
+ Projects have played a key role in your journey to becoming a full-stack web developer. As you apply for development jobs, your portfolio is absolutely vital to opening doors to opportunities. Your portfolio showcases high-quality deployed examples of your work, and you can use your finished projects for that very purpose.
 
-# Contents
+This project is a fantastic opportunity to show employers your collaborative skills and coding abilities, especially in the context of a scalable, user-focused MERN app. Remember that employers want to see what you can do, but they also want to see how you work with other developers. The more examples of deployed collaborative work you have in your portfolio, the more likely you are to get an interview and a job.
 
-Installation, Credits, Features, Tests
 
-# Installation
 
-The user will first install the dependencies required in order for the application to correctly function. This can be done by opening the command line integrated in vscode and typing "npm i" - after this, the user will be prompted to run "npm start" which when done, will begin to develop our application and open up the localhost or necessary port in order to view the application online.
+  ## Installation
+  NPM INIT -Y, NPM I, NPM start
 
-# Credits
+  ## Usage
+  N/A
 
-The project was carried out by myself Lee, Dan, Abdi and Mahmoud
+  ## License
+  MIT License
+  
+  ## Contributing
+  N/A
 
-# Features
+  ## Tests
+  N/A
 
-The blog features a login/registration system using JSON web tokens for sessions. It utilises MongoDB and React in order to render out our single-page application. A dashboard with recent information/enquiries, a contact page in order to get in touch with the team etc.
+  ## Questions
+  For any questions use the following contact information:
+  - [Dan297](https://github.com/Dan297)
+  - https://github.com/a89ball
+  - https://github.com/Lee0997
+  - https://github.com/Mahmoudcali02
 
-# Tests
-
-We will be using the built in app-test file in react to develop our tests and ensure everything functions correctly in the current build.
