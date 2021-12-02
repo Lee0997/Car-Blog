@@ -8,6 +8,17 @@ import {
   InMemoryCache,
   ApolloProvider,
   createHttpLink,
+
+} from "@apollo/client";
+
+const httpLink = createHttpLink({
+  uri: "http://localhost:3001"
+});
+
+const client = new ApolloClient({
+  link: httpLink,
+  cache: new InMemoryCache()
+
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
   const httpLink = createHttpLink({
@@ -31,6 +42,7 @@ import { setContext } from '@apollo/client/link/context';
     // Set up our client to execute the `authLink` middleware prior to making the request to our GraphQL API
     link: authLink.concat(httpLink),
     cache: new InMemoryCache(),
+
 
 });
 
