@@ -16,13 +16,6 @@ async function startApolloServer() {
     context: authMiddleware,
   });
 
-  mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/Car-Blog", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
-  });
-
   app.use(express.urlencoded({ extended: false }));
   app.use(express.json());
 
